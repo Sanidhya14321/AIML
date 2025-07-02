@@ -83,23 +83,88 @@
 # ALL FUNCTIONS IN re module
 # IMPORTANT:
 # import re
-# re.match(pattern, string, flags=0) used to check if the beginning of a string matches a pattern
-# re.search(pattern, string, flags=0) used to search for the first occurrence of a pattern in a string
-# re.findall(pattern, string, flags=0) used to find all occurrences of a pattern in a string
-# re.finditer(pattern, string, flags=0) used to find all occurrences of a pattern in a string and return an iterator yielding match objects
-# re.sub(pattern, repl, string, count=0, flags=0) used for replacing occurrences of a pattern in a string
-# re.split(pattern, string, maxsplit=0, flags=0) used to split a string by the occurrences of a pattern
+# re.match(pattern, string, flags=0)               # used to check if the beginning of a string matches a pattern
+# re.search(pattern, string, flags=0)              # used to search for the first occurrence of a pattern in a string
+# re.findall(pattern, string, flags=0)             # used to find all occurrences of a pattern in a string
+# re.finditer(pattern, string, flags=0)            # used to find all occurrences of a pattern in a string and return an iterator yielding match objects
+# re.sub(pattern, repl, string, count=0, flags=0)  # used for replacing occurrences of a pattern in a string
+# re.split(pattern, string, maxsplit=0, flags=0)   # used to split a string by the occurrences of a pattern
 
 # NOT IMPORTANT:
-# re.escape(string) # used to escape all non-alphanumeric characters in a string
-# re.compile(pattern, flags=0) # used to compile a regular expression pattern into a regex object
+# re.escape(string)                                # used to escape all non-alphanumeric characters in a string
+# re.compile(pattern, flags=0)                     # used to compile a regular expression pattern into a regex object
 # re.subn(pattern, repl, string, count=0, flags=0) # used to replace occurrences of a pattern in a string and return a tuple containing the new string and the number of replacements made
-# re.fullmatch(pattern, string, flags=0)    # used to check if the entire string matches a pattern
-# re.purge() # used to clear the cache of compiled regular expressions
-# re.setstarter()   # used to set the starting point for the next search operation
-# re.DEBUG # used to enable debugging output for regular expression operations
+# re.fullmatch(pattern, string, flags=0)           # used to check if the entire string matches a pattern
+# re.purge()                                       # used to clear the cache of compiled regular expressions
+# re.setstarter()                                  # used to set the starting point for the next search operation
+# re.DEBUG                                         # used to enable debugging output for regular expression operations
+
 
 # text="Contact us at 123-456-7890 or 987-654-3210 for more information."
 # import re
 # digits = re.findall(r'\d+', text)
 # print("Digits found in the text:", digits)
+
+# import re 
+# def clean_text(text):
+#     # Remove special characters and digits
+#     cleaned_text = re.sub(r'[^a-zA-Z\w\s]', '', text)
+#     # Remove extra spaces
+#     cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
+#     return cleaned_text
+
+# # Example usage
+# text = "Hello, World! 1234 This is a test text with special characters & symbols."
+# cleaned_text = clean_text(text)
+# print("Original Text:", text)
+# print("Cleaned Text :", cleaned_text)
+
+# def is_palindrome(s):
+#     text = " ".join(char.lower() for char in s if char.isalnum())  # Normalize the string by removing non-alphanumeric characters and converting to lowercase
+#     print(text)
+#     print(text[::-1])
+#     return text == text[::-1]  # Check if the string is equal to its reverse
+
+
+# # Example usage
+# input_string = input("Enter a string: ")
+# if is_palindrome(input_string):
+#     print(f'"{input_string}" is a palindrome.')
+# else:
+#     print(f'"{input_string}" is not a palindrome.')
+
+# # write a program to count the number of vowels in a string
+# def count_vowels(s):
+#     vowels = "aeiouAEIOU"
+#     count = 0
+#     for char in s:
+#         if char in vowels:
+#             count += 1
+#     return count
+# # Example usage
+# input_string = input("Enter a string: ")
+# vowel_count = count_vowels(input_string)
+# print(f"The number of vowels in the string is: {vowel_count}")
+
+#write a program to find and replace all email addresses in a text using regular expressions
+# import re
+# def replace_emails(text, replacement):
+#     email_pattern = r'[a-zA-Z0-9._%+-]+@gmail+\.[a-zA-Z]{2,}' # Regular expression pattern to match email addresses
+#     modified_text = re.sub(email_pattern, replacement, text)          # Replace all email addresses with the replacement string
+#     return modified_text
+# # Example usage
+# text = "Please contact us at john.doe@gmail.com or jane.doe@gmail.com for more information."
+# replacement = "[REDACTED]"
+# modified_text = replace_emails(text, replacement)
+# print("Original Text:", text)
+# print("Modified Text:", modified_text)
+
+#write a program to reverse the words in a string while preserving the order of the words
+# def reverse_words(s):
+#     words = s.split()  # Split the string into words
+#     reversed_words = ' '.join(reversed(words))  # Reverse the order of words and join them back into a string
+#     return reversed_words
+# # Example usage
+# input_string = input("Enter a string: ")
+# reversed_string = reverse_words(input_string)
+# print("Reversed Words:", reversed_string)
