@@ -168,3 +168,95 @@
 # input_string = input("Enter a string: ")
 # reversed_string = reverse_words(input_string)
 # print("Reversed Words:", reversed_string)
+
+#FILE HANDLING
+# functions in file handling:
+# 1. open() - opens a file in read or write mode
+# 2. close() - closes the file
+# 3. read() - reads the content of the file
+# 4. write() - writes content to the file
+# 5. readline() - reads a single line from the file
+# 6. readlines() - reads all lines from the file and returns a list
+# 7. seek() - moves the file pointer to a specific position in the file
+# 8. tell() - returns the current position of the file pointer in the file
+# 9. flush() - flushes the internal buffer of the file
+
+# with open('example.txt', 'w') as file:
+#     file.write('Hello, World!\n')  
+#     file.writelines(["This is line 1\n","This is Line 2\n"])
+
+# with open('example.txt','r') as file:
+#     for line in file:
+#         print(line.strip())
+#         print(file.readline())
+
+# Function to count the number of words and lines in a file
+# def count_words_and_lines(filename):
+#     try:
+#         with open(filename,'r') as file:
+#             lines = file.readlines()
+#             line_count = len(lines)
+#             word_count = sum(len(line.split()) for line in lines)
+            
+#             print(f"Number of lines: {line_count}")
+#             print(f"Number of words: {word_count}")
+#     except FileNotFoundError:
+#         print(f"The file '{filename}' does not exist.")
+
+# count_words_and_lines('example.txt')
+
+# Function to write a list of items to a file and read them back
+# This function writes a list of items to a file, each on a new line, and reads them back to display the contents of the file.
+# def write_item_to_file(filename,items):
+#     try:
+#         with open(filename,'w') as file:
+#             for item in items:
+#                 file.write(f"{item}\n")
+#     except Exception as e:
+#         print(f"An error occurred while writing to the file: {e}")
+        
+# def read_items_from_file(filename):
+#     try:
+#         with open(filename,'r') as file:
+#             items = file.readlines()
+#             print("Items in the file:")
+#             for item in items:
+#                 print(item.strip())
+#     except FileNotFoundError:
+#         print(f"The file '{filename}' does not exist.")
+
+# fruits=["Apple", "Banana", "Cherry", "Date"]
+
+# write_item_to_file('fruits.txt', fruits)
+# read_items_from_file('fruits.txt')
+
+# Program to copy the contents of one file to another
+# def copy_file_contents(source_file, destination_file):
+#     try:
+#         with open(source_file, 'r') as source, open(destination_file, 'w') as destination:
+#             content = source.read()
+#             destination.write(content)
+#             print(f"Contents copied from '{source_file}' to '{destination_file}'.")
+#     except FileNotFoundError:
+#         print(f"The file '{source_file}' does not exist.")
+#     except Exception as e:
+#         print(f"An error occurred: {e}")
+# source_file = 'example.txt'
+# destination_file = 'copied_example.txt'
+# copy_file_contents(source_file, destination_file)
+
+# Program that counts the number of occurrences of a specific word in a text file
+# def count_word_occurrences(filename, word):
+#     try:
+#         with open(filename, 'r') as file:
+#             content = file.read()
+#             word_count = content.lower().split().count(word.lower())
+#             print(f"The word '{word}' occurs {word_count} times in the file '{filename}'.")
+#     except FileNotFoundError:
+#         print(f"The file '{filename}' does not exist.")
+#     except Exception as e:
+#         print(f"An error occurred: {e}")
+# filename = 'example.txt'
+# word_to_count = input("Enter the word to count occurrences: ")
+# count_word_occurrences(filename, word_to_count)
+
