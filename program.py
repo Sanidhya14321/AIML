@@ -259,4 +259,3 @@
 # filename = 'example.txt'
 # word_to_count = input("Enter the word to count occurrences: ")
 # count_word_occurrences(filename, word_to_count)
-
