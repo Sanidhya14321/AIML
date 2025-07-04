@@ -30,3 +30,20 @@
 # product = reduce(lambda x, y:x * y, numbers)
 # print(product)  # Output: 120
 
+# #decorators
+# # Decorators are a way to modify or enhance functions or methods without changing their code.
+# # They are a powerful tool for functional programming in Python.
+# # Example 1: A simple decorator that prints a message before and after a function call
+# def decorator_function(original_function):
+#     def wrapper_function(*args, **kwargs):
+#         print("Before the function call")
+#         result = original_function(*args, **kwargs)
+#         print("After the function call")
+#         return result
+#     return wrapper_function
+# @decorator_function
+# def add(a, b):
+#     print("Inside the function")
+#     return a + b
+# print(add(5, 3))  # Output: Inside the function, Before the function call
+
