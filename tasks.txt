@@ -1,0 +1,2 @@
+2|SHAVE|completed
+3|WEAR|pending

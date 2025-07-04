@@ -22,13 +22,14 @@ def save_tasks(tasks):
 # Add a new task
 def add_task(tasks):
     title= input("Enter task title: ")
-    task_id=max(tasks.keys(), default=0)+1
+    task_id=int(max(tasks.keys(), default=0))+1
     tasks[task_id] = {'title': title, 'status': 'pending'}
     print(f"Task {title} added with ID: {task_id}")
     save_tasks(tasks)
     
 # View all tasks
 def view_tasks(tasks):
+    load_tasks()
     if not tasks:
         print("No tasks available.")
     print("Tasks:")
@@ -37,6 +38,7 @@ def view_tasks(tasks):
         
 # Update a task's status
 def mark_task_complete(tasks):
+    load_tasks()
     task_id = input("Enter task ID to mark as complete: ")
     if task_id in tasks:
         tasks[task_id]['status'] = 'completed'
@@ -49,8 +51,8 @@ def mark_task_complete(tasks):
 def delete_task(tasks):
     task_id = input("Enter task ID to delete: ")
     if task_id in tasks:
-        del tasks[task_id]
-        print(f"Task {task_id} deleted.")
+        deleted_task = tasks.pop(task_id)
+        print(f"Task {deleted_task['title']} deleted.")
         save_tasks(tasks)
     else:
         print("Task ID not found.")
