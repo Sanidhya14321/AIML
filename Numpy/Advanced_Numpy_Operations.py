@@ -60,3 +60,5 @@
 # random_array2= np.random.randint(1,4, size=(3, 4))
 # print("Random array with integer values between 1 and 10:\n", random_array2)
 
+# np.random.seed(42)  # Setting a seed for reproducibility
+

@@ -46,3 +46,19 @@ import numpy as np
 # transposed_arr = arr.T
 # print("Original Array:\n", arr)
 # print("Transposed Array:\n", transposed_arr)
+
+# Generate and filter a random dataset 
+# dataset = np.random.randint(50, 100, size=(10, 5))
+# print("Original Dataset:\n", dataset)
+# filtered_dataset = dataset[dataset[:, 0] > 90]
+# print("Filtered Dataset (First Column > 90):\n", filtered_dataset)
+# mean_values = np.mean(filtered_dataset, axis=0)
+# print("Mean Values of Each Column in Filtered Dataset:\n", mean_values)
+
+# Program to create a 3d array and calculate the sum along a specific axis
+# arr = np.random.randint(1,10, size=(3,3))
+# sum_along_x_axis = np.sum(arr, axis=0)
+# sum_along_y_axis = np.sum(arr, axis=1)
+# print("Original 3D Array:\n", arr)
+# print("Sum along axis 0:\n", sum_along_x_axis, "\nSum along axis 1:\n", sum_along_y_axis)
+
