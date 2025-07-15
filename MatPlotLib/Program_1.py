@@ -25,3 +25,32 @@
 
 # # Show the plot
 # plt.show()
+
+# # BAR CHART
+# import matplotlib.pyplot as plt
+# import numpy as np
+# # Sample data
+# x = np.array([1, 2, 3, 4, 5])
+# y = np.array([2, 3, 5, 7, 11])
+# # Create a bar chart
+# plt.bar(x, y)
+# # Add labels and title
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')
+# plt.title('Sample Bar Chart')
+# # Show the plot
+# plt.show()
+
+# # Histogram
+# import matplotlib.pyplot as plt
+# import numpy as np
+# # Sample data
+# x = [1,2,2,3,3,3,3,4,4,4]
+# # Create a histogram
+# plt.hist(x, bins=30, density=True, alpha=0.6, color='green')
+# # Add labels and title
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')
+# plt.title('Sample Histogram')
+# # Show the plot
+# plt.show()
