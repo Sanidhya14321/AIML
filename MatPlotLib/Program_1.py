@@ -54,3 +54,19 @@
 # plt.title('Sample Histogram')
 # # Show the plot
 # plt.show()
+
+# # Scatter Plot
+# import matplotlib.pyplot as plt
+# import numpy as np
+# # Sample data
+# x = np.random.randint(1,20,100)
+# y = np.random.randint(1,20,100)
+# # Create a scatter plot
+# plt.scatter(x, y)
+# # Add labels and title
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')
+# plt.title('Sample Scatter Plot')
+# # Show the plot
+# plt.show()
+
