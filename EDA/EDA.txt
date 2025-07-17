@@ -1,0 +1,15 @@
+EDA stands for "Exploratory Data Analysis".
+- It is a methodology for analyzing data that was developed by John Tukey in the 1960s.
+- EDA is a way of looking at data to understand its structure and to identify patterns and relationships.
+- It is a non-parametric approach, meaning that it does not require a specific model or distribution of the data.
+- Instead, it relies on visualizations and summary statistics to gain insights into the data.
+- EDA is often used in the early stages of data analysis to get a sense of the data and to identify potential issues or areas for further investigation.
+- It can be used with a wide range of data types and is particularly useful for exploratory data analysis, data mining, and data visualization.
+
+EDA is a cyclical process that involves the following steps:
+1.  **Data Cleaning**: This involves checking for errors, missing values, and outliers in the data.
+2.  **Data Transformation**: This involves converting the data into a suitable format for analysis.
+3.  **Data Visualization**: This involves creating plots and charts to visualize the data and to identify patterns and relationships.
+4.  **Summary Statistics**: This involves calculating summary statistics such as means, medians, and standard deviations to describe the data.
+5.  **Hypothesis Generation**: This involves generating hypotheses based on the insights gained from the data.
+6.  **Modeling**: This involves building models to test the hypotheses and to make predictions.
