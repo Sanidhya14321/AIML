@@ -44,3 +44,16 @@ NON - PROBABILITY SAMPLING :
 • Recruit the participants via research participants for test or study
 • Used where it’s hard to find the potential population for research
 
+
+ Population Sampling
+ Analysing or testing entire population is impossible and also a cost & time taking. To Save our money and time we use the subset of the entire population called sample.
+ Population sampling is the process of selecting a subset of the objects that is representative of the entire population. The sample must have sufficient size of  objects to warrant statistical analysis.
+ Must be perform correctly since errors can lead to inaccurate and misleading result.
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
