@@ -57,3 +57,9 @@ NON - PROBABILITY SAMPLING :
 ![alt text](image-2.png)
 
 ![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+*P(x) = [nCx*p^x*(1-p)^n-x]
+  where P(x) is the probability of x successes in n trials, nCx is the number of combinations of n items taken x at a time, p is the probability of success in a single trial, and (1-p) is the probability of failure in a single trial.*
